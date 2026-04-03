@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biology Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Biology Explorer</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#cell">The Cell</a></li>
+        <li><a href="#ecology">Ecology</a></li>
+        <li><a href="#evolution">Evolution</a></li>
+        <li><a href="#genetics">Genetics</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Explore the Science of Life</h1>
+      <p>From the smallest molecules to entire ecosystems, biology reveals the extraordinary complexity and beauty of the living world.</p>
+      <a href="#topics" class="btn">Start Exploring</a>
+    </div>
+  </section>
+
+  <section id="topics" class="topics-overview">
+    <h2>Core Topics in Biology</h2>
+    <div class="card-grid">
+      <a href="#cell" class="card">
+        <div class="card-icon">&#x1F52C;</div>
+        <h3>Cell Biology</h3>
+        <p>The fundamental unit of life and the processes that keep cells alive.</p>
+      </a>
+      <a href="#ecology" class="card">
+        <div class="card-icon">&#x1F333;</div>
+        <h3>Ecology</h3>
+        <p>How organisms interact with each other and their environments.</p>
+      </a>
+      <a href="#evolution" class="card">
+        <div class="card-icon">&#x1F9EC;</div>
+        <h3>Evolution</h3>
+        <p>The processes that drive the diversity of life over time.</p>
+      </a>
+      <a href="#genetics" class="card">
+        <div class="card-icon">&#x1F9EA;</div>
+        <h3>Genetics</h3>
+        <p>How traits are inherited and expressed through DNA.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="cell" class="content-section">
+    <div class="section-inner">
+      <h2>Cell Biology</h2>
+      <div class="two-col">
+        <div class="text-col">
+          <p>The cell is the basic structural and functional unit of all living organisms. Cells were first observed by Robert Hooke in 1665, and the cell theory &mdash; stating that all living things are composed of cells &mdash; became one of the foundational principles of biology.</p>
+          <h3>Key Organelles</h3>
+          <ul>
+            <li><strong>Nucleus</strong> &mdash; Contains the cell's DNA and controls gene expression.</li>
+            <li><strong>Mitochondria</strong> &mdash; The powerhouse of the cell; generates ATP through cellular respiration.</li>
+            <li><strong>Endoplasmic Reticulum</strong> &mdash; A network of membranes involved in protein and lipid synthesis.</li>
+            <li><strong>Golgi Apparatus</strong> &mdash; Modifies, sorts, and packages proteins for transport.</li>
+            <li><strong>Ribosomes</strong> &mdash; Molecular machines that synthesize proteins.</li>
+            <li><strong>Cell Membrane</strong> &mdash; A selectively permeable barrier that controls what enters and exits the cell.</li>
+          </ul>
+          <h3>Prokaryotes vs. Eukaryotes</h3>
+          <p>Prokaryotic cells (bacteria, archaea) lack a membrane-bound nucleus, while eukaryotic cells (plants, animals, fungi) contain a true nucleus and complex organelles. Despite these differences, all cells share fundamental processes like DNA replication, transcription, and translation.</p>
+        </div>
+        <div class="diagram-col">
+          <div class="cell-diagram">
+            <svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="200" cy="175" rx="180" ry="150" fill="#e8f5e9" stroke="#388e3c" stroke-width="3"/>
+              <ellipse cx="200" cy="160" rx="55" ry="45" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+              <circle cx="200" cy="155" r="12" fill="#f9a825" opacity="0.6"/>
+              <text x="200" y="160" text-anchor="middle" font-size="10" fill="#5d4037">Nucleolus</text>
+              <text x="200" y="195" text-anchor="middle" font-size="11" fill="#e65100">Nucleus</text>
+              <g transform="translate(90, 80)">
+                <ellipse cx="0" cy="0" rx="28" ry="14" fill="#ffccbc" stroke="#d84315" stroke-width="1.5"/>
+                <path d="M-20,-5 Q-10,5 0,-5 Q10,5 20,-5" fill="none" stroke="#d84315" stroke-width="1"/>
+                <text x="0" y="25" text-anchor="middle" font-size="9" fill="#bf360c">Mitochondrion</text>
+              </g>
+              <g transform="translate(300, 120)">
+                <path d="M-30,0 Q-20,-15 -10,0 Q0,15 10,0 Q20,-15 30,0 Q20,15 10,0 Q0,-15 -10,0" fill="#e1bee7" stroke="#7b1fa2" stroke-width="1.5"/>
+                <text x="0" y="20" text-anchor="middle" font-size="9" fill="#4a148c">ER</text>
+              </g>
+              <g transform="translate(120, 250)">
+                <ellipse cx="0" cy="0" rx="22" ry="15" fill="#b3e5fc" stroke="#0277bd" stroke-width="1.5"/>
+                <ellipse cx="0" cy="0" rx="15" ry="10" fill="none" stroke="#0277bd" stroke-width="1"/>
+                <text x="0" y="25" text-anchor="middle" font-size="9" fill="#01579b">Golgi</text>
+              </g>
+              <circle cx="280" cy="240" r="4" fill="#795548"/>
+              <circle cx="290" cy="250" r="4" fill="#795548"/>
+              <circle cx="270" cy="255" r="4" fill="#795548"/>
+              <text x="280" y="275" text-anchor="middle" font-size="9" fill="#4e342e">Ribosomes</text>
+              <text x="200" y="340" text-anchor="middle" font-size="11" fill="#1b5e20">Cell Membrane</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ecology" class="content-section alt-bg">
+    <div class="section-inner">
+      <h2>Ecology</h2>
+      <div class="two-col">
+        <div class="text-col">
+          <p>Ecology is the study of interactions among organisms and their environment. It encompasses everything from individual organisms to the biosphere as a whole.</p>
+          <h3>Levels of Ecological Organization</h3>
+          <div class="eco-levels">
+            <div class="eco-level">
+              <span class="level-name">Organism</span>
+              <span class="level-desc">An individual living thing</span>
+            </div>
+            <div class="eco-arrow">&darr;</div>
+            <div class="eco-level">
+              <span class="level-name">Population</span>
+              <span class="level-desc">A group of the same species in one area</span>
+            </div>
+            <div class="eco-arrow">&darr;</div>
+            <div class="eco-level">
+              <span class="level-name">Community</span>
+              <span class="level-desc">All populations in a habitat</span>
+            </div>
+            <div class="eco-arrow">&darr;</div>
+            <div class="eco-level">
+              <span class="level-name">Ecosystem</span>
+              <span class="level-desc">Community + its physical environment</span>
+            </div>
+            <div class="eco-arrow">&darr;</div>
+            <div class="eco-level">
+              <span class="level-name">Biosphere</span>
+              <span class="level-desc">All ecosystems on Earth</span>
+            </div>
+          </div>
+          <h3>Energy Flow</h3>
+          <p>Energy flows through ecosystems in food chains and food webs. Producers (plants) convert sunlight into chemical energy via photosynthesis. Primary consumers (herbivores) eat producers, and secondary consumers (carnivores) eat herbivores. At each trophic level, roughly 90% of energy is lost as heat, which is why top predators are relatively rare.</p>
+        </div>
+        <div class="diagram-col">
+          <div class="food-chain">
+            <div class="trophic-level sun-level">Sun</div>
+            <div class="chain-arrow">&darr;</div>
+            <div class="trophic-level producer-level">Producers (Plants)</div>
+            <div class="chain-arrow">&darr;</div>
+            <div class="trophic-level primary-level">Primary Consumers (Herbivores)</div>
+            <div class="chain-arrow">&darr;</div>
+            <div class="trophic-level secondary-level">Secondary Consumers (Carnivores)</div>
+            <div class="chain-arrow">&darr;</div>
+            <div class="trophic-level tertiary-level">Tertiary Consumers (Apex Predators)</div>
+            <div class="chain-arrow">&darr;</div>
+            <div class="trophic-level decomposer-level">Decomposers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evolution" class="content-section">
+    <div class="section-inner">
+      <h2>Evolution</h2>
+      <div class="text-col full-width">
+        <p>Evolution is the change in heritable characteristics of populations over successive generations. Charles Darwin and Alfred Russel Wallace independently proposed natural selection as the primary mechanism of evolution.</p>
+        <h3>Mechanisms of Evolution</h3>
+        <div class="mechanism-grid">
+          <div class="mechanism">
+            <h4>Natural Selection</h4>
+            <p>Organisms with traits better suited to their environment are more likely to survive and reproduce. Over time, these advantageous traits become more common in the population.</p>
+          </div>
+          <div class="mechanism">
+            <h4>Genetic Drift</h4>
+            <p>Random changes in allele frequencies, especially significant in small populations. Events like bottlenecks and founder effects can drastically alter a population's genetic makeup.</p>
+          </div>
+          <div class="mechanism">
+            <h4>Gene Flow</h4>
+            <p>The transfer of genetic material between populations through migration. Gene flow tends to reduce differences between populations and increase genetic variation within them.</p>
+          </div>
+          <div class="mechanism">
+            <h4>Mutation</h4>
+            <p>Random changes in DNA sequence that introduce new alleles into a population. Mutations are the ultimate source of all genetic variation.</p>
+          </div>
+        </div>
+        <h3>Evidence for Evolution</h3>
+        <ul>
+          <li><strong>Fossil Record</strong> &mdash; Shows a progression of life forms over geological time.</li>
+          <li><strong>Comparative Anatomy</strong> &mdash; Homologous structures reveal common ancestry (e.g., the forelimbs of mammals).</li>
+          <li><strong>Molecular Biology</strong> &mdash; DNA and protein sequence comparisons confirm evolutionary relationships.</li>
+          <li><strong>Biogeography</strong> &mdash; Geographic distribution of species reflects evolutionary history.</li>
+          <li><strong>Direct Observation</strong> &mdash; Antibiotic resistance in bacteria and Darwin's finches show evolution in action.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="genetics" class="content-section alt-bg">
+    <div class="section-inner">
+      <h2>Genetics</h2>
+      <div class="two-col">
+        <div class="text-col">
+          <p>Genetics is the study of heredity and the variation of inherited characteristics. The field began with Gregor Mendel's experiments on pea plants in the 1860s and has since expanded to encompass molecular genetics, genomics, and epigenetics.</p>
+          <h3>DNA Structure</h3>
+          <p>DNA (deoxyribonucleic acid) is a double helix composed of two strands of nucleotides. Each nucleotide contains a sugar (deoxyribose), a phosphate group, and one of four nitrogenous bases: adenine (A), thymine (T), guanine (G), or cytosine (C). Base pairing rules dictate that A pairs with T and G pairs with C.</p>
+          <h3>The Central Dogma</h3>
+          <p>The central dogma of molecular biology describes the flow of genetic information:</p>
+          <div class="central-dogma">
+            <span class="dogma-step">DNA</span>
+            <span class="dogma-arrow">&xrarr; Transcription &xrarr;</span>
+            <span class="dogma-step">RNA</span>
+            <span class="dogma-arrow">&xrarr; Translation &xrarr;</span>
+            <span class="dogma-step">Protein</span>
+          </div>
+          <h3>Mendelian Genetics</h3>
+          <p>Mendel discovered that traits are determined by discrete units (now called genes) that come in pairs. His laws of segregation and independent assortment explain how alleles are separated during gamete formation and recombine during fertilization.</p>
+        </div>
+        <div class="diagram-col">
+          <div class="punnett-square">
+            <h4>Punnett Square (Monohybrid Cross)</h4>
+            <p class="cross-label">Bb &times; Bb</p>
+            <table>
+              <tr>
+                <th></th>
+                <th>B</th>
+                <th>b</th>
+              </tr>
+              <tr>
+                <th>B</th>
+                <td class="dominant">BB</td>
+                <td class="heterozygous">Bb</td>
+              </tr>
+              <tr>
+                <th>b</th>
+                <td class="heterozygous">Bb</td>
+                <td class="recessive">bb</td>
+              </tr>
+            </table>
+            <div class="ratio">
+              <p><strong>Phenotype ratio:</strong> 3 dominant : 1 recessive</p>
+              <p><strong>Genotype ratio:</strong> 1 BB : 2 Bb : 1 bb</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Biology Explorer &mdash; An educational resource for learning about the science of life.</p>
+      <p class="footer-note">Content is for educational purposes only.</p>
+    </div>
+  </footer>
+</body>
+</html>
